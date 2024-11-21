@@ -2,9 +2,13 @@ JWT Cracker for HS256 Algorithm
 This script cracks an RS256 JWT token by modifying the header to use the HS256 algorithm and then attempts to decode the token using a wordlist for brute-forcing the secret key. It is useful for testing the security of JWT-based authentication systems.
 
 Requirements
+
 Python 3.x
+
 PyJWT library
+
 Install with: pip install pyjwt
+
 Wordlist (e.g., rockyou2024.txt
 
 How It Works
@@ -23,8 +27,11 @@ Example Output
 bash
 Copy code
 Successful decode with key: password123
-Decoded JWT payload: {'sub': '1866757', 'email': 'hawkf406@hackbot.in', 'orgId': 87844, 'org': 'hawk-crew', 'userType': 'OWNER', 'type': 'access', 'iat': 1729503250, 'exp': 1729506250}
+
+Decoded JWT payload: {'sub': '', 'email': '', 'orgId': 87844, 'org': '', 'userType': 'OWNER', 'type': 'access', 'iat': 1729503250, 'exp': 1729506250}
+
 Notes
 Error Handling: The script handles expired, invalid, and unsupported tokens gracefully.
+
 Security Warning: This script is for educational purposes and should only be used in a legal and authorized context (e.g., penetration testing with permission).
 License
